@@ -1,0 +1,12 @@
+note: "Проверка тракта на T4 перед полными прогонами: скорость шага и генерации, устойчивость fp16 на mT5"
+extends: ../base.yaml
+kaggle:
+  timeout_minutes: 60
+train:
+  model: google/mt5-base
+  revision: 2eb15465c5dd7f72a8f7984306ad05ebc3dd1e1f
+  max_steps: 100
+  eval_every: 100
+  val_per_language: 50
+  test_per_language: 0
+  time_limit_hours: 0.5

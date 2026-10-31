@@ -1,0 +1,8 @@
+note: "Эталон: опубликованная модель авторов XL-Sum без дообучения. Точка сравнения и проверка оценочного тракта"
+extends: ../base.yaml
+kaggle:
+  timeout_minutes: 240
+train:
+  model: csebuetnlp/mT5_multilingual_XLSum
+  revision: 2437a524effdbadc327ced84595508f1e32025b3
+  eval_only: true

@@ -1,0 +1,7 @@
+note: "H3: дообучение эталона на 9 языках с малым lr превосходит эталон: модель сосредотачивается на этих языках вместо 45"
+extends: ../base.yaml
+train:
+  model: csebuetnlp/mT5_multilingual_XLSum
+  revision: 2437a524effdbadc327ced84595508f1e32025b3
+  lr: 0.0001
+  epochs: 1

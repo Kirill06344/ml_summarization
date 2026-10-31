@@ -1,0 +1,8 @@
+note: "H1: mT5-small, дообученная на 9 языках, обгоняет экстрактивные бейзлайны; дешёвая оценка меньшей ёмкости"
+extends: ../base.yaml
+train:
+  model: google/mt5-small
+  revision: 73fb5dbe4756edadc8fbe8c769b0a109493acf7a
+  batch: 32
+  accumulation: 1
+  test_per_language: 0   # не претендует на финал: test оценивается только у выбранной по val модели

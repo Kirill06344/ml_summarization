@@ -1,0 +1,26 @@
+# Общий рецепт. Параметры генерации и обрезки — как у авторов XL-Sum, кроме max_target (docs/training.md).
+kaggle:
+  data_slug: xlsum-nine-languages
+  timeout_minutes: 780
+  internet: true        # веса качаются с Hugging Face по зафиксированному коммиту
+train:
+  train_per_language: 20000
+  val_per_language: 500
+  test_per_language: 2000
+  epochs: 2
+  batch: 16             # на две T4: по 8 на GPU
+  accumulation: 2
+  lr: 0.0005
+  weight_decay: 0.01
+  warmup_ratio: 0.05
+  label_smoothing: 0.1
+  max_source: 512
+  max_target: 128       # у авторов 84, но тогда обрезается 32% вьетнамских резюме (docs/data.md)
+  beams: 4
+  length_penalty: 0.6
+  no_repeat_ngram: 2
+  eval_batch: 8         # на GPU; при 4 лучах это 32 копии входа
+  gradient_checkpointing: true   # без него mT5-base с батчем 8 не влезает в 14,6 ГБ T4
+  amp: "fp16"           # слой wo считается в fp32 (src/modeling.py), иначе NaN
+  time_limit_hours: 10
+  seed: 1

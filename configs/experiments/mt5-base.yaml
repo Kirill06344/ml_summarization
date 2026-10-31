@@ -1,0 +1,5 @@
+note: "H2: большая ёмкость mT5-base даёт ROUGE-2 выше mT5-small при том же числе примеров"
+extends: ../base.yaml
+train:
+  model: google/mt5-base
+  revision: 2eb15465c5dd7f72a8f7984306ad05ebc3dd1e1f

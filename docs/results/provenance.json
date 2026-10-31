@@ -1,0 +1,40 @@
+{
+  "final": "xlsum-reference",
+  "selection_split": "val",
+  "primary_metric": "macro.rouge2",
+  "val": {
+    "xlsum-reference": 0.15617387131665217,
+    "xlsum-mt5-small": 0.09931232180400462,
+    "xlsum-mt5-base": 0.12722619578954084,
+    "xlsum-mt5-xlsum-finetune": 0.15555014178895044
+  },
+  "test_runs": [
+    "xlsum-reference",
+    "baseline-lead",
+    "baseline-textrank",
+    "baseline-oracle"
+  ],
+  "data_revision": "8d824689b60413430f1782f5bea2a56a4c390b68",
+  "inputs_sha256": {
+    "runs/xlsum-reference/scores_val.json": "1ba4a9996a3a9f988dd4c9782bfa7fd09db26c4dc99be8a7c5930bfc09afed39",
+    "runs/xlsum-mt5-small/scores_val.json": "9cfa9bfc6ba15e5b815d90a0a2c4bdc46879fe3ab412435ecb5be858478aa5cd",
+    "runs/xlsum-mt5-base/scores_val.json": "c8777b8fb2ddafa5045c02749d082791d807424178d02d59f82a5c3a23f253c4",
+    "runs/xlsum-mt5-xlsum-finetune/scores_val.json": "ee8926912e8af0d622022488a380a2f6543f387a70923d566e1c5292e968fdbe",
+    "runs/baseline-lead/scores_val.json": "d51833b42921ea61b2288b95e0570b520154cfc7c7f7eed0dba0aca20fae304b",
+    "runs/baseline-textrank/scores_val.json": "173b21ef14a1441ab99183dee3d28d48ceb19057701da138a5d2eeceed19f7f8",
+    "runs/baseline-oracle/scores_val.json": "8e1643f1795fba4bcb1eed8037c5a62afffb38ec3ce7b105fe8f47c00ba6f4e2",
+    "runs/xlsum-reference/scores_test.json": "9f0c4acb4e8ca0348bd4e4d04e01863190cbaeb78b4c35439f68a006e1dc206c",
+    "runs/baseline-lead/scores_test.json": "a8d654413f7c32ffb953bb762343cc1e27e5d38ba383a582483b85ae3c514857",
+    "runs/baseline-textrank/scores_test.json": "70a11c0e50ea91414be441d8695a3ee9eaeb76485ed04d337fd4e5f37d4a862d",
+    "runs/baseline-oracle/scores_test.json": "d6c00f57157f82598419fd0beea5807a029355e20385390f8814c988896a7dc2",
+    "runs/xlsum-reference/training_log.json": "acae3360b841c346f0f4e7fabe8dea6bb744966152fd0858249c0af0b5db36e2",
+    "runs/xlsum-mt5-small/training_log.json": "5fd3e2bd2e655bf463c5c4845ded56a339190ded7cb3600454e5ea905a541129",
+    "runs/xlsum-mt5-base/training_log.json": "34911d94f86ffe2d91f7d861a0ced5c223c004737086633aa451d4725e93296a",
+    "runs/xlsum-mt5-xlsum-finetune/training_log.json": "c22e61d34a173121de0ecc740391c086087b71708edc7bd546eeea81dafbc628",
+    "runs/xlsum-reference/predictions/val/russian.jsonl": "a66134164b0195d51cd688138e2760af336b371470660d115022e537e4a75b28",
+    "runs/xlsum-mt5-small/predictions/val/russian.jsonl": "5b58d0a415f2f12eb969d1704c6ef288f4699fbc11f60bf9432e11802e12dd20",
+    "runs/xlsum-mt5-base/predictions/val/russian.jsonl": "73f7c49645cf1fd18380adbcae9701d77200972ca1c787ea3f75546e76599ad9",
+    "runs/xlsum-mt5-xlsum-finetune/predictions/val/russian.jsonl": "6b763f4898e736a8bd46d854aa60bfd09dbd7e84b9ae22a88149ce698483da5e",
+    "data/processed/manifest.json": "4f831c12f6a8dc13d88faa039d7dcadf14ad36c51bb3eebc785617ae32006b1a"
+  }
+}

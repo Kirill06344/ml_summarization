@@ -1,0 +1,25 @@
+# Данные и производные: скачиваются и собираются tools/prepare_data.py
+data/
+runs/*
+!runs/README.md
+
+# Веса
+*.pt
+*.bin
+*.safetensors
+
+# Окружение
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Секреты
+kaggle.json
+access_token
+.env
+
+# IDE
+.idea/
+.vscode/
+.DS_Store

@@ -1,0 +1,12 @@
+torch>=2.6
+transformers>=5.16,<6
+sentencepiece
+protobuf
+numpy
+pandas
+pyarrow
+pyyaml
+matplotlib
+kaggle
+pytest
+rouge-score
